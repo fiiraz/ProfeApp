@@ -98,19 +98,19 @@ class _HomeScreenState extends State<HomeScreen> {
         return Column(
           children: <Widget>[
             _buildCard(
-                    config: CustomConfig(
-                      colors: [
-                        Colors.white70,
-                        Colors.white54,
-                        Colors.white30,
-                        Colors.white24,
-                      ],
-                      durations: [32000, 21000, 18000, 5000],
-                      heightPercentages: [0.75, 0.76, 0.78, 0.81],
-                      blur: _blur,
-                    ),
-                    backgroundColor: Colors.blue[900],
-                  ),
+              config: CustomConfig(
+                colors: [
+                  Colors.white70,
+                  Colors.white54,
+                  Colors.white30,
+                  Colors.white24,
+                ],
+                durations: [32000, 21000, 18000, 5000],
+                heightPercentages: [0.75, 0.76, 0.78, 0.81],
+                blur: _blur,
+              ),
+              backgroundColor: Colors.blue[900],
+            ),
             CustomerOperationsScreen(),
           ],
         );

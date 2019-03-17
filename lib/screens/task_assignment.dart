@@ -72,8 +72,9 @@ class _TaskAssignmentScreenState extends State<TaskAssignmentScreen> {
         padding: EdgeInsets.symmetric(horizontal: 24.0),
         child: Column(
           children: <Widget>[
+            Text("Açıklama:"),
             Container(
-              margin: EdgeInsets.fromLTRB(0, 7, 0, 0),
+              margin: EdgeInsets.fromLTRB(0, 0, 0, 0),
               decoration: BoxDecoration(
                 color: Colors.white,
                 border: new Border.all(width: 1.0, color: Colors.blue),
@@ -92,8 +93,9 @@ class _TaskAssignmentScreenState extends State<TaskAssignmentScreen> {
                 decoration: InputDecoration(),
               ),
             ),
+            Text("Atanacak Rol:"),
             Container(
-              margin: EdgeInsets.fromLTRB(0, 7, 0, 0),
+              margin: EdgeInsets.fromLTRB(0, 0, 0, 0),
               decoration: BoxDecoration(
                 color: Colors.white,
                 border: new Border.all(width: 1.0, color: Colors.blue),
@@ -138,8 +140,9 @@ class _TaskAssignmentScreenState extends State<TaskAssignmentScreen> {
                 },
               ),
             ),
+            Text("Kategori:"),
             Container(
-              margin: EdgeInsets.fromLTRB(0, 7, 0, 0),
+              margin: EdgeInsets.fromLTRB(0, 0, 0, 0),
               decoration: BoxDecoration(
                 color: Colors.white,
                 border: new Border.all(width: 1.0, color: Colors.blue),
@@ -184,9 +187,10 @@ class _TaskAssignmentScreenState extends State<TaskAssignmentScreen> {
                 },
               ),
             ),
+            Text("Bitiş Tarihi:"),
             Container(
               width: double.infinity,
-              margin: EdgeInsets.fromLTRB(0, 7, 0, 0),
+              margin: EdgeInsets.fromLTRB(0, 0, 0, 0),
               decoration: BoxDecoration(
                 color: Colors.white,
                 border: new Border.all(width: 1.0, color: Colors.blue),
@@ -219,9 +223,10 @@ class _TaskAssignmentScreenState extends State<TaskAssignmentScreen> {
                 ),
               ),
             ),
+            Text("Ek:"),
             Container(
               width: double.infinity,
-              margin: EdgeInsets.fromLTRB(0, 7, 0, 0),
+              margin: EdgeInsets.fromLTRB(0, 0, 0, 0),
               decoration: BoxDecoration(
                 color: Colors.white,
                 border: new Border.all(width: 1.0, color: Colors.blue),
@@ -250,9 +255,10 @@ class _TaskAssignmentScreenState extends State<TaskAssignmentScreen> {
                 ),
               ),
             ),
+            Text("Ek Zorunluluğu:"),
             Container(
               width: double.infinity,
-              margin: EdgeInsets.fromLTRB(0, 7, 0, 0),
+              margin: EdgeInsets.fromLTRB(0, 0, 0, 0),
               decoration: BoxDecoration(
                 color: Colors.white,
                 border: new Border.all(width: 1.0, color: Colors.blue),
