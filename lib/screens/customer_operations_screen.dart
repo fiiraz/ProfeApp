@@ -9,13 +9,10 @@ class CustomerOperationsScreen extends StatefulWidget {
 class _CustomerOperationsScreenState extends State<CustomerOperationsScreen> {
   @override
   Widget build(BuildContext context) {
-    return Column(
-      children: <Widget>[
+    return
         Expanded(
           child: buildPhoneList(),
-        ),
-      ],
-    );
+        );
   }
 
   ListView buildPhoneList() {
@@ -45,11 +42,26 @@ class _CustomerOperationsScreenState extends State<CustomerOperationsScreen> {
             ListTile(
             title: Text("Deneme"),
             subtitle: Text("Görev Türü: Stand"),
-            trailing: Column(
-              children: <Widget>[
-                Icon(Icons.timer),
-                Text("01.01.2019 - 00:00"),
+            trailing:
+            Container(
+              decoration: BoxDecoration(
+                border: Border(
+                    left: BorderSide(
+                      color: Colors.black,
+                      width: 0.8,
+                    )
+                ),
+              ),
+              child:
+              Padding(padding: EdgeInsets.fromLTRB(4.0, 0, 0, 0),
+              child: Column(
+                  children: <Widget>[
+                  Icon(Icons.timer),
+              Text("01.01.2019 - 00:00"),
               ],
+            ),
+              ),
+
             ),
           ),);
         });

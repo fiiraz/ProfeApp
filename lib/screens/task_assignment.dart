@@ -93,23 +93,24 @@ class _TaskAssignmentScreenState extends State<TaskAssignmentScreen> {
                       bottom: 7.0,
                     ),
                   ),
-                  child: DropdownButtonHideUnderline(
-                    child: DropdownButton(
-                      iconSize: 24.0,
-                      isExpanded: true,
-                      isDense: true,
-                      items: _categories.map((String dropDownStringItem){
-                        return DropdownMenuItem(
-                          value: dropDownStringItem,
-                          child: Text(dropDownStringItem),
-                        );
-                      }).toList(),
-                      onChanged: (String value){
-                        _onDropDownItemSelectedCat(value);
-                      },
-                      value: _category,
+                    child: DropdownButtonHideUnderline(
+                      child: DropdownButton(
+                        iconSize: 24.0,
+                        isExpanded: true,
+                        isDense: true,
+                        items: _categories.map((String dropDownStringItem){
+                          return DropdownMenuItem(
+                            value: dropDownStringItem,
+                            child: Text(dropDownStringItem),
+                          );
+                        }).toList(),
+                        onChanged: (String value){
+                          _onDropDownItemSelectedCat(value);
+                        },
+                        value: _category,
+                      ),
                     ),
-                  ),
+
                 );
               },
             ),
