@@ -75,6 +75,20 @@ class _HomeScreenState extends State<HomeScreen> {
       case 0:
         return Column(
           children: <Widget>[
+            _buildCard(
+              config: CustomConfig(
+                colors: [
+                  Colors.white70,
+                  Colors.white54,
+                  Colors.white30,
+                  Colors.white24,
+                ],
+                durations: [32000, 21000, 18000, 5000],
+                heightPercentages: [0.75, 0.76, 0.78, 0.81],
+                blur: _blur,
+              ),
+              backgroundColor: Colors.blue[900],
+            ),
             Center(
               child: Text("First Screen"),
             ),
@@ -83,9 +97,7 @@ class _HomeScreenState extends State<HomeScreen> {
       case 1:
         return Column(
           children: <Widget>[
-
-
-                   _buildCard(
+            _buildCard(
                     config: CustomConfig(
                       colors: [
                         Colors.white70,
@@ -99,8 +111,6 @@ class _HomeScreenState extends State<HomeScreen> {
                     ),
                     backgroundColor: Colors.blue[900],
                   ),
-
-
             CustomerOperationsScreen(),
           ],
         );
@@ -108,6 +118,20 @@ class _HomeScreenState extends State<HomeScreen> {
       default:
         return Column(
           children: <Widget>[
+            _buildCard(
+              config: CustomConfig(
+                colors: [
+                  Colors.white70,
+                  Colors.white54,
+                  Colors.white30,
+                  Colors.white24,
+                ],
+                durations: [32000, 21000, 18000, 5000],
+                heightPercentages: [0.75, 0.76, 0.78, 0.81],
+                blur: _blur,
+              ),
+              backgroundColor: Colors.blue[900],
+            ),
             Center(
               child: Text("Third Screen"),
             ),
