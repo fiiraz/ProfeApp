@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:profe_app/screens/customer_operations_screen.dart';
+import 'package:profe_app/screens/tabs/customer_operations_screen.dart';
 import 'package:profe_app/screens/home_screen.dart';
 import 'package:profe_app/screens/task_assignment.dart';
 

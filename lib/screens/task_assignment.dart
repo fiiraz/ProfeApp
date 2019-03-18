@@ -3,6 +3,7 @@ import 'dart:io';
 import 'package:flutter/material.dart';
 import 'dart:async';
 import 'package:image_picker/image_picker.dart';
+import 'package:profe_app/screens/widgets/wave.dart';
 
 class TaskAssignmentScreen extends StatefulWidget {
   @override
@@ -59,9 +60,21 @@ class _TaskAssignmentScreenState extends State<TaskAssignmentScreen> {
             icon: Icon(Icons.edit),
             onPressed: () {},
           ),
+          IconButton(
+            icon: Icon(blur == null ? Icons.blur_off : Icons.blur_on),
+            onPressed: () {
+              setState(() {
+                blur = nextBlur();
+              });
+            },
+          )
         ],
       ),
-      body: getForm(),
+      body:
+      Column(children: <Widget>[
+        buildCart(context),
+        getForm(),
+      ],),
     );
   }
 
